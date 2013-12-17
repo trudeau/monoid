@@ -3,6 +3,10 @@ monoid
 
 A Java implementation of the [Monoid](http://en.wikipedia.org/wiki/Monoid) algebraic structure.
 
+# APIs
+
+ * [0.0.1](http://trudeau.github.io/monoid/0.0.1/)
+
 # Usage
 
 A `org.nnsoft.trudeau.math.monoid.Monoid<E>` is a [Monoid](http://en.wikipedia.org/wiki/Monoid) model and offers the following methods:
