@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Monoid by trudeau</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Monoid</h1>
+        <p>A Java implementation of the Monoid algebraic structure</p>
+
+        <p class="view"><a href="https://github.com/trudeau/monoid">View the Project on GitHub <small>trudeau/monoid</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/trudeau/monoid/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/trudeau/monoid/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/trudeau/monoid">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="monoid" class="anchor" href="#monoid"><span class="octicon octicon-link"></span></a>monoid</h1>
+
+<p>A Java implementation of the <a href="http://en.wikipedia.org/wiki/Monoid">Monoid</a> algebraic structure.</p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>A <code>org.nnsoft.trudeau.math.monoid.Monoid&lt;E&gt;</code> is a <a href="http://en.wikipedia.org/wiki/Monoid">Monoid</a> model and offers the following methods:</p>
+
+<ul>
+<li><p><code>E identity()</code> that returns the identity value;</p></li>
+<li><p><code>E append( E e1, E e2 )</code> that returns the result of the associative binary operation between two elements of the monoid;</p></li>
+<li><p><code>E inverse( E element )</code> that returns the inverse of the input element.</p></li>
+</ul><p>A <code>org.nnsoft.trudeau.math.monoid.OrderedMonoid&lt;E&gt;</code> is a <code>org.nnsoft.trudeau.math.monoid.Monoid&lt;E&gt;</code> able to order the elements.</p>
+
+<h2>
+<a name="known-default-monoids" class="anchor" href="#known-default-monoids"><span class="octicon octicon-link"></span></a>Known default Monoids</h2>
+
+<ul>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.BigDecimalWeightBaseOperations</code></li>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.BigIntegerWeightBaseOperations</code></li>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.DoubleWeightBaseOperations</code></li>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.FloatWeightBaseOperations</code></li>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.IntegerWeightBaseOperations</code></li>
+<li><code>org.nnsoft.trudeau.math.monoid.primitive.LongWeightBaseOperations</code></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/trudeau">trudeau</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
