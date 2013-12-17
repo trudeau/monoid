@@ -1,0 +1,505 @@
+<api>
+<package name="org.nnsoft.trudeau.math.monoid"
+>
+<interface name="Monoid"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="append"
+ return="E"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e1" type="E">
+</parameter>
+<parameter name="e2" type="E">
+</parameter>
+</method>
+<method name="identity"
+ return="E"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="E"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="E">
+</parameter>
+</method>
+</interface>
+<interface name="OrderedMonoid"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="java.util.Comparator">
+</implements>
+<implements name="org.nnsoft.trudeau.math.monoid.Monoid">
+</implements>
+</interface>
+</package>
+<package name="org.nnsoft.trudeau.math.monoid.primitive"
+>
+<class name="BigDecimalWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="BigDecimalWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.BigDecimalWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.math.BigDecimal"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.math.BigDecimal">
+</parameter>
+<parameter name="s2" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o1" type="java.math.BigDecimal">
+</parameter>
+<parameter name="o2" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method name="identity"
+ return="java.math.BigDecimal"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.math.BigDecimal"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.math.BigDecimal">
+</parameter>
+</method>
+</class>
+<class name="BigIntegerWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="BigIntegerWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.BigIntegerWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.math.BigInteger"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.math.BigInteger">
+</parameter>
+<parameter name="s2" type="java.math.BigInteger">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o1" type="java.math.BigInteger">
+</parameter>
+<parameter name="o2" type="java.math.BigInteger">
+</parameter>
+</method>
+<method name="identity"
+ return="java.math.BigInteger"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.math.BigInteger"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.math.BigInteger">
+</parameter>
+</method>
+</class>
+<class name="DoubleWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="DoubleWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.DoubleWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.lang.Double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Double">
+</parameter>
+<parameter name="s2" type="java.lang.Double">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Double">
+</parameter>
+<parameter name="s2" type="java.lang.Double">
+</parameter>
+</method>
+<method name="identity"
+ return="java.lang.Double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.lang.Double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.lang.Double">
+</parameter>
+</method>
+</class>
+<class name="FloatWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="FloatWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.FloatWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.lang.Float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Float">
+</parameter>
+<parameter name="s2" type="java.lang.Float">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Float">
+</parameter>
+<parameter name="s2" type="java.lang.Float">
+</parameter>
+</method>
+<method name="identity"
+ return="java.lang.Float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.lang.Float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.lang.Float">
+</parameter>
+</method>
+</class>
+<class name="IntegerWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="IntegerWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.IntegerWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Integer">
+</parameter>
+<parameter name="s2" type="java.lang.Integer">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o1" type="java.lang.Integer">
+</parameter>
+<parameter name="o2" type="java.lang.Integer">
+</parameter>
+</method>
+<method name="identity"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.lang.Integer"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.lang.Integer">
+</parameter>
+</method>
+</class>
+<class name="LongWeightBaseOperations"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.math.monoid.OrderedMonoid">
+</implements>
+<constructor name="LongWeightBaseOperations"
+ type="org.nnsoft.trudeau.math.monoid.primitive.LongWeightBaseOperations"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="append"
+ return="java.lang.Long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Long">
+</parameter>
+<parameter name="s2" type="java.lang.Long">
+</parameter>
+</method>
+<method name="compare"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s1" type="java.lang.Long">
+</parameter>
+<parameter name="s2" type="java.lang.Long">
+</parameter>
+</method>
+<method name="identity"
+ return="java.lang.Long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="inverse"
+ return="java.lang.Long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="element" type="java.lang.Long">
+</parameter>
+</method>
+</class>
+</package>
+</api>
