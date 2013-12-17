@@ -22,7 +22,7 @@ package org.nnsoft.trudeau.math.monoid;
 import java.io.Serializable;
 
 /**
- * A {@link Monoid} is a {@link Semigroup} with an identity value.
+ * A {@link Monoid} is a {@code Semigroup} with an identity value.
  *
  * @param <E> the type of the elements in the {@link Monoid}
  */
@@ -39,7 +39,7 @@ public interface Monoid<E>
 
     /**
      * Returns the result of the associative binary operation defined by this
-     * {@link Semigroup} between two elements of appropriate type.
+     * {@link Monoid} between two elements of appropriate type.
      *
      * @param e1 the first element
      * @param e2 the second element
